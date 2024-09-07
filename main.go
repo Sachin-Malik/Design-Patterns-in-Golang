@@ -28,10 +28,6 @@ func main() {
 	// 	fmt.Println(sqlite.GetData("Malik"))
 
 	// testDecorator();
+	TestBuilderPatter()
 
-	cache := make(map[int]bool)
-	cachedIsEven := cacheWrapper(isEven, &cache)
-	cachedIsEven(12)
-	cachedIsEven(13)
-	cachedIsEven(12)
 }
